@@ -47,19 +47,22 @@ const BookingModal = () => {
         >
           <motion.div 
             ref={modalRef}
-            initial={{ scale: 0.9, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
+            initial={{ scale: 0.9, opacity: 0, y: 20 }}
+            animate={{ scale: 1, opacity: 1, y: 0 }}
             exit={{ scale: 0.9, opacity: 0 }}
             transition={{ duration: 0.3, type: 'spring', stiffness: 300, damping: 30 }}
-            className="bg-white rounded-xl shadow-intense w-full max-w-md md:max-w-lg relative overflow-hidden"
+            className="bg-white rounded-2xl shadow-intense w-full max-w-2xl relative overflow-hidden mx-auto my-auto"
+            style={{ width: '66.666%', maxHeight: '80vh' }}
           >
-            <button 
-              onClick={closeModal}
-              className="absolute top-4 right-4 p-2 rounded-full hover:bg-gray-100 transition-colors z-10 text-gray-500 hover:text-gray-700"
-              aria-label="Close modal"
-            >
-              <RiCloseLine className="w-5 h-5" />
-            </button>
+            <div className="absolute top-0 right-0 p-2 z-20">
+              <button 
+                onClick={closeModal}
+                className="flex items-center justify-center w-10 h-10 rounded-full bg-white shadow-md hover:bg-gray-100 transition-colors text-gray-500 hover:text-gray-700"
+                aria-label="Close modal"
+              >
+                <RiCloseLine className="w-6 h-6" />
+              </button>
+            </div>
             
             <div className="p-6 md:p-8">
               <h3 className="text-2xl font-bold mb-4 text-dark-900">Book an Appointment</h3>
@@ -67,12 +70,13 @@ const BookingModal = () => {
                 Schedule a free 15-minute consultation with our experts to discuss your project needs.
               </p>
               
-              <div className="h-[600px] w-full">
+              <div className="w-full" style={{ height: '500px' }}>
                 <iframe
                   src="https://calendly.com/dipuraj-thapa/15min"
                   frameBorder="0"
                   className="w-full h-full rounded-lg"
                   title="Calendly Scheduling"
+                  loading="lazy"
                 ></iframe>
               </div>
             </div>
