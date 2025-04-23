@@ -14,6 +14,9 @@ import ServiceDetailPage from "./components/pages/ServiceDetailPage";
 import AboutPage from "./components/pages/AboutPage";
 import ContactPage from "./components/pages/ContactPage";
 import PortfolioPage from "./components/pages/PortfolioPage";
+import BlogPage from "./components/pages/BlogPage";
+import BlogDetailPage from "./components/pages/BlogDetailPage";
+import BlogEditorPage from "./components/pages/BlogEditorPage";
 import NotFoundPage from "./components/pages/NotFoundPage";
 
 // Context
