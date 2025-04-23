@@ -54,7 +54,7 @@ const TestimonialCard = ({ testimonial }) => {
         <RiDoubleQuotesL />
       </div>
       
-      <p style={{ color: "#F5F5F5" }} className="mb-6 flex-grow">{testimonial.text}</p>
+      <p style={{ color: "#F5F5F5", opacity: 1 }} className="mb-6 flex-grow !text-[#F5F5F5]">{testimonial.text}</p>
       
       <div className="flex items-center justify-between mt-auto">
         <div className="flex items-center gap-3">
