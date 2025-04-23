@@ -65,7 +65,7 @@ const servicesData = {
     ],
     technologies: ['React Native', 'Swift', 'Kotlin', 'Flutter', 'Firebase', 'iOS SDK', 'Android SDK'],
     process: [
-      { title: 'Strategy & Planning', description: 'We define your app's objectives, target users, and core functionality.' },
+      { title: 'Strategy & Planning', description: 'We define your app\'s objectives, target users, and core functionality.' },
       { title: 'UX/UI Design', description: 'Our designers create intuitive, engaging mobile interfaces following platform guidelines.' },
       { title: 'Development', description: 'We build your app using the most appropriate technology for your needs.' },
       { title: 'Testing', description: 'Rigorous testing on real devices ensures optimal performance and reliability.' },
