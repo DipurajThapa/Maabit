@@ -88,6 +88,27 @@ const router = createBrowserRouter([
         element: <PortfolioPage />,
       },
       {
+        path: "blog",
+        children: [
+          {
+            index: true,
+            element: <BlogPage />,
+          },
+          {
+            path: ":slug",
+            element: <BlogDetailPage />,
+          },
+          {
+            path: "new",
+            element: <BlogEditorPage />,
+          },
+          {
+            path: "edit/:id",
+            element: <BlogEditorPage />,
+          },
+        ],
+      },
+      {
         path: "contact",
         element: <ContactPage />,
       },
