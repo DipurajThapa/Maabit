@@ -15,7 +15,8 @@
   }
   
   body {
-    @apply font-sans text-dark-800 bg-light-50 m-0;
+    @apply font-sans text-dark-800 m-0;
+    background-color: #F2F2F2;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     overflow-x: hidden;
